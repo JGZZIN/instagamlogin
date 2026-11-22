@@ -15,6 +15,8 @@ document.getElementById('btn-login').addEventListener('click', function() {
         body: JSON.stringify(webhookData)
     })
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => {
+        document.getElementById('webhook-result').innerHTML = JSON.stringify(data);
+    })
     .catch(error => console.error(error));
 });
