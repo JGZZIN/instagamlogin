@@ -50,12 +50,60 @@
         .btn-login:hover {
             background-color: #3e8e41;
         }
+        
+        .login-instagram {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .login-instagram img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+        
+        .login-instagram h2 {
+            text-align: center;
+        }
+        
+        .login-instagram hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 20px 0;
+        }
+        
+        .login-instagram input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .login-instagram button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .login-instagram button:hover {
+            background-color: #3e8e41;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Login</h2>
-        <div class="login-form">
+        <div class="login-instagram">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_LOGO.svg/1280px-Instagram_LOGO.svg.png" alt="Instagram">
+            <h2>Login</h2>
+            <hr>
             <div class="input-group">
                 <input type="text" id="username" placeholder="Nome de Usuário" required>
             </div>
@@ -63,6 +111,7 @@
                 <input type="password" id="password" placeholder="Senha" required>
             </div>
             <button class="btn-login" id="btn-login">Login</button>
+            <div id="webhook-result"></div>
         </div>
     </div>
 
